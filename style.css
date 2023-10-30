@@ -129,7 +129,7 @@ h2 {
   margin-top: -8px;
   padding: 0 24px;
   height: 0;
-  opacity: 0;
+  opacity: 1;
   overflow: hidden;
   transition: 0.5s;
 }
@@ -182,4 +182,64 @@ footer p a {
 
 #copyright a {
   color: #ff9a6c;
+}
+
+@media (max-width: 430px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  header a.nav {
+    padding: 5px;
+  }
+  header img {
+    width: 125px;
+  }
+  main section img {
+    display: none;
+  }
+
+  /* main section#inicio img {
+    display: none;
+  }
+  main section#clinica img {
+    display: none;
+  }
+  main section#farmacia img {
+    display: none;
+  }
+  main section.img img {
+    display: none;
+  } */
+
+  main section h1 {
+    text-align: center;
+  }
+  main section p,
+  a {
+    display: flex;
+  }
+  main section#farmacia p {
+    text-align: start;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    gap: 10px;
+  }
+  footer #links strong,
+  #links nav {
+    display: none;
+  }
+  footer p,
+  img {
+    display: flex;
+  }
+
+  #copyright {
+    display: flex;
+    justify-content: center;
+  }
 }
