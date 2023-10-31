@@ -184,12 +184,13 @@ footer p a {
   color: #ff9a6c;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 500px) {
   header {
     display: flex;
     justify-content: space-between;
   }
   header a.nav {
+    display: inline-block;
     padding: 5px;
   }
   header img {
@@ -219,15 +220,27 @@ footer p a {
   a {
     display: flex;
   }
+  main .botao {
+    padding: 12px 24px;
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+  main .botao-transparente {
+    max-width: fit-content;
+    margin: 0 auto;
+  }
   main section#farmacia p {
     text-align: start;
   }
-
+  section {
+    margin-bottom: -110px;
+  }
   footer {
     display: flex;
     justify-content: space-between;
     padding: 25px;
     gap: 10px;
+    margin-top: 60px;
   }
   footer #links strong,
   #links nav {
@@ -241,5 +254,14 @@ footer p a {
   #copyright {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    padding: 30px;
+  }
+  header nav {
+    display: flex;
   }
 }
